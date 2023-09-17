@@ -78,8 +78,9 @@ function initializeDisks(pegMap) {
 }
 
 function makeMove() {
+
   if (counter == 0) {
-    const nDisks = 5;
+    const nDisks = document.getElementById('numDisc').value;
     initialize(nDisks, pegMap);
     moveDisks(nDisks, 'A', 'C', 'B');
     initializeDisks(pegHist[0]);
